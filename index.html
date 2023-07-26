@@ -49,44 +49,40 @@
     <header class="container mx-auto">
 
         <!------------------- Navbar Section ---------------------->
-        <div class="navbar bg-base-100">
+        <div class="navbar justify-between bg-base-100 mt-5 px-4 py-5">
             
             <div class="navbar-center hidden lg:flex ">
-              <ul class="menu menu-horizontal px-1">
-                <li><a>Item 1</a></li>
-                <li tabindex="0">
-                  <details>
-                    <summary>Parent</summary>
-                    <ul class="p-2">
-                      <li><a>Submenu 1</a></li>
-                      <li><a>Submenu 2</a></li>
-                    </ul>
-                  </details>
-                </li>
-                <li><a>Item 3</a></li>
-              </ul>
-            </div>
-            <div class="navbar-start">
-                <div class="dropdown">
-                  <label tabindex="0" class="btn btn-ghost lg:hidden">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                  </label>
-                  <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                <ul class="menu menu-horizontal px-1">
                     <li><a>Item 1</a></li>
-                    <li>
-                      <a>Parent</a>
-                      <ul class="p-2">
-                        <li><a>Submenu 1</a></li>
-                        <li><a>Submenu 2</a></li>
-                      </ul>
+                    <li tabindex="0">
+                      <details>
+                        <summary>Parent</summary>
+                        <ul class="p-2">
+                          <li><a>Submenu 1</a></li>
+                          <li><a>Submenu 2</a></li>
+                        </ul>
+                      </details>
                     </li>
                     <li><a>Item 3</a></li>
-                  </ul>
-                </div>
-                <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+                </ul>
+            </div>
+            <div class="navbar-start">
+                <img src="./images/logo.png" alt="Logo" class="w-9 md:w-14">
+                <a class="btn btn-ghost normal-case text-2xl md:text-4xl font-bold">Fruit Burst</a>
               </div>
-            <div class="navbar-end">
+            <div class="navbar-end hidden lg:block">
               <a class="btn">Button</a>
+            </div>
+            <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </label>
+                <ul tabindex="0" class="menu right-0 menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-40">
+                  <li><a>Home</a></li>
+                  <li><a>About Us</a></li>
+                  <li><a>Shop</a></li>
+                  <li><a>All Fruits</a></li>
+                </ul>
             </div>
         </div>
 
@@ -503,9 +499,9 @@
                 <h1 class="text-4xl md:text-5xl font-black mb-4">Why Choose Us</h1>
                 <p class="px-5 lg:px-0">Contrary to popular belief, is not simply random text. It has roots in a piece of classical<br> Latin literature from 45 BC, making it over 2000 years old.</p>
               </div>
-              <div class="flex justify-between flex-col-reverse">
+              <div class="flex justify-start flex-col-reverse ">
                 <div>Start kshfbskvjb</div>
-                <div class="flex-col-reverse">Middle jbnljkdsnb</div>
+                <div class="">Middle jbnljkdsnb</div>
                 <div>END wreougfhrou</div>
               </div>
         </section>
