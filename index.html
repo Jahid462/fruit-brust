@@ -46,34 +46,28 @@
 </head>
 <body class="lato">
     <!--======================= Header Section =======================-->
-    <header class="container mx-auto">
+    <header class="container mx-auto px-5">
 
         <!------------------- Navbar Section ---------------------->
-        <div class="navbar justify-between bg-base-100 mt-5 px-4 py-5">
+        <div class="navbar justify-between bg-base-100 my-4 lg:my-12 py-5 lg:bg-[#F85559]  rounded-full lg:px-10">
             
-            <div class="navbar-center hidden lg:flex ">
-                <ul class="menu menu-horizontal px-1">
-                    <li><a>Item 1</a></li>
-                    <li tabindex="0">
-                      <details>
-                        <summary>Parent</summary>
-                        <ul class="p-2">
-                          <li><a>Submenu 1</a></li>
-                          <li><a>Submenu 2</a></li>
-                        </ul>
-                      </details>
-                    </li>
-                    <li><a>Item 3</a></li>
+            <div class="navbar-center hidden lg:flex lg:text-white text-black">
+                <ul class="flex justify-center items-center gap-5 px-1 text-lg font-bold">
+                    <li><a href="#" class="">Home</a></li>
+                    <li><a href="#" class="">About Us</a></li>
+                    <li><a href="#" class="">Shop</a></li>
+                    <li><a href="#" class="">All Fruits</a></li>
                 </ul>
             </div>
-            <div class="navbar-start">
+            <div class="">
                 <img src="./images/logo.png" alt="Logo" class="w-9 md:w-14">
-                <a class="btn btn-ghost normal-case text-2xl md:text-4xl font-bold">Fruit Burst</a>
+                <a class="btn btn-ghost normal-case text-2xl md:text-4xl font-bold lg:text-white text-black">Fruit Burst</a>
               </div>
-            <div class="navbar-end hidden lg:block">
-              <a class="btn">Button</a>
+            <div class="hidden lg:block w-80 relative">
+                <input type="text" placeholder="Search here" class="w-full rounded-full outline-none px-5 py-3 bg-white" />
+                <i class="fa-solid fa-magnifying-glass absolute right-7 top-6 cursor-pointer fa-lg"></i>
             </div>
-            <div class="dropdown">
+            <div class="dropdown lg:absolute">
                 <label tabindex="0" class="btn btn-ghost lg:hidden">
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                 </label>
@@ -87,7 +81,7 @@
         </div>
 
         <!------------------ Banner Section ----------------------->
-        <section class="px-5 relative">
+        <section class="relative">
             <div class="carousel w-full min-h-[200px] md:min-h-[600px] rounded-lg">
                 <div class="carousel w-full">
                     <div id="slide1" class="carousel-item relative w-full">
