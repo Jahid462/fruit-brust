@@ -35,7 +35,7 @@
           theme: {
             extend: {
               colors: {
-                primary_color: '#F85559',
+                primary_color: '#ff5500',
                 hover_color: '#C2410C'
               }
             }
@@ -50,23 +50,23 @@
     <header class="container mx-auto px-5 relative">
 
         <!------------------- Navbar Section ---------------------->
-        <div class="navbar justify-between bg-base-100 my-4 lg:my-12 py-5 lg:bg-[#F85559]  rounded-full lg:px-10">
+        <div class="navbar justify-between bg-base-100 my-4 lg:my-12 py-5 lg:bg-[#535353]  rounded-full lg:px-10">
             
             <div class="navbar-center hidden lg:flex lg:text-white text-black">
                 <ul class="flex justify-center items-center gap-5 px-1 text-lg font-bold">
-                    <li><a href="#" class="">Home</a></li>
-                    <li><a href="#" class="">About Us</a></li>
-                    <li><a href="#" class="">Shop</a></li>
-                    <li><a href="#" class="">All Fruits</a></li>
+                    <li><a href="#" class="hover:text-primary_color">Home</a></li>
+                    <li><a href="#" class="hover:text-primary_color">About Us</a></li>
+                    <li><a href="#" class="hover:text-primary_color">Shop</a></li>
+                    <li><a href="#" class="hover:text-primary_color">All Fruits</a></li>
                 </ul>
             </div>
-            <div class="">
+            <div class="cursor-pointer space-x-3">
                 <img src="./images/logo.png" alt="Logo" class="w-9 md:w-14">
-                <a class="btn btn-ghost normal-case text-2xl md:text-4xl font-bold lg:text-white text-black">Fruit Burst</a>
-              </div>
+                <a class="normal-case text-2xl md:text-4xl font-bold lg:text-white text-black hover:text-primary_color transition">Fruit Burst</a>
+            </div>
             <div class="hidden lg:block w-80 relative">
                 <input type="text" placeholder="Search here" class="w-full rounded-full outline-none px-5 py-3 bg-white" />
-                <i class="fa-solid fa-magnifying-glass absolute right-7 top-6 cursor-pointer fa-lg"></i>
+                <i class="fa-solid fa-magnifying-glass absolute right-7 top-6 cursor-pointer fa-lg hover:text-primary_color"></i>
             </div>
             <div class="dropdown lg:absolute">
                 <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -85,6 +85,8 @@
         <section>
             <div class="carousel w-full min-h-[200px] md:min-h-[600px] rounded-lg">
                 <div class="carousel w-full">
+
+                    <!-------------- Slider One ------------------>
                     <div id="slide1" class="carousel-item relative w-full">
                         <div class="hero " style="background-image: url(./images/banner1.png);">
                             <div class="hero-overlay bg-black bg-opacity-60"></div>
@@ -92,7 +94,7 @@
                               <div>
                                 <h1 class="mb-5 text-3xl md:text-5xl font-black text-white">Exotic Tastes at Your<br> Doorstep</h1>
                                 <p class="mb-5 font-normal text-sm">We supply highly quality organic products</p>
-                                <button class="btn bg-primary_color hover:bg-hover_color	 text-white border-none">Shop Now</button>
+                                <button class="btn bg-primary_color hover:bg-hover_color text-white border-none capitalize px-5 text-lg">Shop Now</button>
                               </div>
                             </div>
                         </div>
@@ -101,6 +103,8 @@
                         <a href="#slide2" class="btn btn-circle border-none bg-black text-white  hover:bg-stone-600">❯</a>
                       </div>
                     </div> 
+
+                    <!-------------- Slider Two ------------------>
                     <div id="slide2" class="carousel-item relative w-full">
                         <div class="hero " style="background-image: url(./images/banner2.png);">
                             <div class="hero-overlay bg-black bg-opacity-60"></div>
@@ -116,7 +120,9 @@
                         <a href="#slide1" class="btn btn-circle">❮</a> 
                         <a href="#slide3" class="btn btn-circle">❯</a>
                       </div>
-                    </div> 
+                    </div>
+
+                    <!-------------- Slider Three ------------------>
                     <div id="slide3" class="carousel-item relative w-full">
                         <div class="hero " style="background-image: url(./images/banner3.png);">
                             <div class="hero-overlay bg-black bg-opacity-60"></div>
@@ -132,7 +138,9 @@
                         <a href="#slide2" class="btn btn-circle border-none bg-black text-white  hover:bg-stone-600">❮</a> 
                         <a href="#slide4" class="btn btn-circle border-none bg-black text-white  hover:bg-stone-600">❯</a>
                       </div>
-                    </div> 
+                    </div>
+
+                    <!-------------- Slider Four ------------------>
                     <div id="slide4" class="carousel-item relative w-full">
                         <div class="hero " style="background-image: url(./images/banner4.png);">
                             <div class="hero-overlay bg-black bg-opacity-60"></div>
@@ -244,7 +252,7 @@
 
                       <!--------------------- Modal -------------------->
                       <dialog id="apple" class="modal">
-                        <form method="dialog" class="modal-box px-20 py-8 text-center space-y-5">
+                        <form method="dialog" class="modal-box text-center px-20 py-5 lg:py-8 space-y-2 lg:space-y-5">
                           <img src="./images/fruit6.png" alt="Apple" class="mx-auto">
                           <h1 class="text-4xl font-black">Apple</h1>
                           <p class="py-4">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
@@ -297,7 +305,7 @@
 
                       <!--------------------- Modal -------------------->
                       <dialog id="orange" class="modal">
-                        <form method="dialog" class="modal-box px-20 py-8 text-center space-y-5">
+                        <form method="dialog" class="modal-box text-center px-20 py-5 lg:py-8 space-y-2 lg:space-y-5">
                           <img src="./images/fruit7.png" alt="Orange" class="mx-auto">
                           <h1 class="text-4xl font-black">Orange</h1>
                           <p class="py-4">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
@@ -350,7 +358,7 @@
 
                       <!--------------------- Modal -------------------->
                       <dialog id="dragon" class="modal">
-                        <form method="dialog" class="modal-box px-20 py-8 text-center space-y-5">
+                        <form method="dialog" class="modal-box text-center px-20 py-5 lg:py-8 space-y-2 lg:space-y-5">
                           <img src="./images/fruit8.png" alt="Red Dragon" class="mx-auto">
                           <h1 class="text-4xl font-black">Red Dragon</h1>
                           <p class="py-4">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
@@ -403,7 +411,7 @@
 
                       <!--------------------- Modal -------------------->
                       <dialog id="banana" class="modal">
-                        <form method="dialog" class="modal-box px-20 py-8 text-center space-y-5">
+                        <form method="dialog" class="modal-box text-center px-20 py-5 lg:py-8 space-y-2 lg:space-y-5">
                           <img src="./images/fruit9.png" alt="Banana" class="mx-auto">
                           <h1 class="text-4xl font-black">Banana</h1>
                           <p class="py-4">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
@@ -433,7 +441,7 @@
                       </dialog>
                 </div>
             </div>
-            <button class="btn flex flex-1 mt-10 bg-primary_color hover:bg-hover_color text-white mx-auto">Shop All</button>
+            <button class="btn flex flex-1 mt-10 bg-primary_color hover:bg-hover_color text-white mx-auto capitalize px-5 text-lg">Shop All</button>
         </section>
 
         <!------------------ Meet The Team Section -------------------->
@@ -510,7 +518,7 @@
                             <div class="flex justify-center lg:justify-start">
                                 <hr class="border-black border-b-2 w-24 text-end">
                             </div>
-                            <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                            <p class="px-8 md:px-0">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                         </div>
                     </div>
                     <div class="flex gap-5 text-center lg:text-start flex-col lg:flex-row">
@@ -522,7 +530,7 @@
                             <div class="flex justify-center lg:justify-start">
                                 <hr class="border-black border-b-2 w-24 text-end">
                             </div>
-                            <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                            <p class="px-8 md:px-0">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                         </div>
                     </div>
                     <div class="flex gap-5 text-center lg:text-start flex-col lg:flex-row">
@@ -534,7 +542,7 @@
                             <div class="flex justify-center lg:justify-start">
                                 <hr class="border-black border-b-2 w-24 text-end">
                             </div>
-                            <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                            <p class="px-8 md:px-0">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                         </div>
                     </div>
                 </div>
@@ -555,7 +563,7 @@
                             <div class="flex justify-center lg:justify-end">
                                 <hr class="border-black border-b-2 w-24 text-end">
                             </div>
-                            <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                            <p class="px-8 md:px-0">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                         </div>
                     </div>
                     <div class="flex gap-5 text-center lg:text-end flex-col lg:flex-row-reverse">
@@ -567,7 +575,7 @@
                             <div class="flex justify-center lg:justify-end">
                                 <hr class="border-black border-b-2 w-24 text-end">
                             </div>
-                            <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                            <p class="px-8 md:px-0">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                         </div>
                     </div>
                     <div class="flex gap-5 text-center lg:text-end flex-col lg:flex-row-reverse">
@@ -579,7 +587,7 @@
                             <div class="flex justify-center lg:justify-end">
                                 <hr class="border-black border-b-2 w-24 text-end">
                             </div>
-                            <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                            <p class="px-8 md:px-0">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                         </div>
                     </div>
                 </div>
@@ -591,25 +599,25 @@
     <!-- ============================================================ -->
     <footer class="bg-black">
         <div class="container mx-auto px-5 text-center text-white py-28 space-y-8">
-            <div class="flex gap-5 items-center justify-center">
+            <div class="flex gap-5 items-center justify-center cursor-pointer">
                 <img src="./images/logo.png" alt="Logo">
-                <h1 class="text-4xl font-bold">Fruit Burst</h1>
+                <h1 class="text-4xl font-bold hover:text-primary_color transition">Fruit Burst</h1>
             </div>
             <ul class="flex gap-10 flex-wrap justify-center text-base">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">All Fruits</a></li>
-                <li><a href="#">Support</a></li>
-                <li><a href="#">My Account</a></li>
+                <li><a href="#" class="hover:text-primary_color">Home</a></li>
+                <li><a href="#" class="hover:text-primary_color">About Us</a></li>
+                <li><a href="#" class="hover:text-primary_color">Shop</a></li>
+                <li><a href="#" class="hover:text-primary_color">All Fruits</a></li>
+                <li><a href="#" class="hover:text-primary_color">Support</a></li>
+                <li><a href="#" class="hover:text-primary_color">My Account</a></li>
             </ul>
             <ul class="flex gap-7 justify-center text-2xl">
-                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-apple"></i></a></li>
+                <li><a href="#" class="hover:text-primary_color"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#" class="hover:text-primary_color"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#" class="hover:text-primary_color"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#" class="hover:text-primary_color"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li><a href="#" class="hover:text-primary_color"><i class="fa-brands fa-whatsapp"></i></a></li>
+                <li><a href="#" class="hover:text-primary_color"><i class="fa-brands fa-apple"></i></a></li>
             </ul>
         </div>
     </footer>
